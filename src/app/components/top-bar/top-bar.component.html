@@ -1,0 +1,14 @@
+<nav class="grey lighten-5">
+    <div class="nav-wrapper">
+        <a [routerLink]="['/']" class="brand-logo center">
+            <img src="../../../assets/img/1x/icon.png" alt="">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="secondary-tx" [routerLink]="['/mantenimiento']" routerLinkActive="active">Desarrollo a medida</a></li>
+            <li><a class="secondary-tx" (click)="onLogin()">Login</a></li>
+            <li><a class="secondary-tx" [routerLink]="['/registro']" routerLinkActive="active">Registrarse</a></li>
+        </ul>
+    </div>
+</nav>
+
+<login-box style="display: none"></login-box>

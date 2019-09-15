@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 center">
+            <h3>PLANES PARA {{planSection.nombre}}</h3>
+            <h5>{{planSection.descripcion}}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>Elige tu plan</b></p>
+            </div>
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>DISEÑO</b></p>
+            </div>
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>DESARROLLO</b></p>
+            </div>
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>CONEXIÓN COMERCIAL</b></p>
+            </div>
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>ALMACENAMIENTO</b></p>
+            </div>
+            <div class="col s12 rowPlan valign-wrapper">
+                <p class="center"><b>TECNOLOGÍA</b></p>
+            </div>
+        </div>
+        <div class="col s3 planDesc" *ngFor="let plan of planSection.subplanes">
+            <div class="col s12 center rowPlan blue lighten-4">
+                <p>Plan {{plan.nombre}} <br> {{plan.precio}}
+                </p>
+            </div>
+            <div class="col s12 center rowPlan blue lighten-3">
+                <ul>
+                    <li *ngFor="let diseno of plan.diseno"> {{diseno}} </li>
+                </ul>
+            </div>
+            <div class="col s12 center rowPlan blue lighten-2">
+                <ul>
+                    <li *ngFor="let desarrollo of plan.desarrollo"> {{desarrollo}} </li>
+                </ul>
+            </div>
+            <div class="col s12 center rowPlan blue lighten-3">
+                <ul>
+                    <li *ngFor="let conexion of plan.conexiones"> {{conexion}} </li>
+                </ul>
+            </div>
+            <div class="col s12 center rowPlan blue lighten-4">
+                <ul>
+                    <li>{{plan.almacenamiento}}</li>
+                </ul>
+            </div>
+            <div class="col s12 center rowPlan blue lighten-5">
+                <ul>
+                    <li *ngFor="let tecnologia of plan.tecnologia"> {{tecnologia}} </li>
+                </ul>
+            </div>
+
+            <div class="col s12 center buyBtn">
+                <button class="btn blue darken-4">Comprar</button>
+            </div>
+        </div>
+        <p class="advert">*El valor de la membresía es de $200usd</p>
+    </div>
+</div>

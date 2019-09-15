@@ -1,0 +1,27 @@
+<form action="#" method="post">
+    <div class="row">
+        <div class="col s12 input-field">
+            <input type="text" name="username" id="username" [(ngModel)]="usuario.username" #username="ngModel">
+            <label for="username">Usuario</label>
+        </div>
+        <div class="col s12 input-field">
+            <input type="text" name="password" id="password" [(ngModel)]="usuario.password" #password="ngModel">
+            <label for="password">Constraseña</label>
+        </div>
+        <div class="col s12 input-field">
+            <input type="text" name="firstName" id="firstName" [(ngModel)]="usuario.firstName" #firstName="ngModel">
+            <label for="firstName">Nombre</label>
+        </div>
+        <div class="col s12 input-field">
+            <input type="text" name="lastName" id="lastName" [(ngModel)]="usuario.lastName" #lastName="ngModel">
+            <label for="lastName">Apellido</label>
+        </div>
+        <div class="col s12 input-field">
+            <input type="text" name="email" id="email" [(ngModel)]="usuario.email" #email="ngModel">
+            <label for="email">Email</label>
+        </div>
+        <div class="col s12 center">
+            <button class="btn blue darken-4">REGISTRAR</button>
+        </div>
+    </div>
+</form>

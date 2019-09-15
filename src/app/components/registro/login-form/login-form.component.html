@@ -1,0 +1,15 @@
+<form action="">
+    <div class="row">
+        <div class="col s12 input-field">
+            <input type="text" name="username" id="username" [(ngModel)]="usuario.username" #username="ngModel">
+            <label for="username">Usuario</label>
+        </div>
+        <div class="col s12 input-field">
+            <input type="password" name="password" id="password" [(ngModel)]="usuario.password" #password="ngModel">
+            <label for="password">Contraseña</label>
+        </div>
+        <div class="col s12 center">
+            <button class="btn blue darken-4">ENTRAR</button>
+        </div>
+    </div>
+</form>

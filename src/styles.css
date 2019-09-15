@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* TEXTOS */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+li,
+label {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+
+/* COLORES */
+
+.primary-bg {
+    background: #4242D8;
+}
+
+.secondary-bg {
+    background: #60b9fd
+}
+
+.primary-tx {
+    color: #4242D8;
+}
+
+.secondary-tx {
+    color: #60b9fd
+}
+
+.active {
+    color: #4242D8;
+}
+
+
+/* ESTRUCTURA */
+
+.full-heigth {
+    height: 100vh;
+}
+
+.reverseFlex {
+    display: flex;
+    flex-flow: row-reverse
+}

@@ -1,0 +1,15 @@
+.skillImg img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skillImg {
+    height: 10em;
+}
+
+#about {
+    padding: 2em 0;
+}

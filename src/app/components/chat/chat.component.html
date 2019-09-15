@@ -1,0 +1,32 @@
+<div class="" id="chat">
+    <div id="chatBtn" (click)="openChat()" class="btn  light-blue darken-4 waves-light" *ngIf="!open">
+        <i class="fas fa-comments"></i>
+    </div>
+    <div class="close right" *ngIf="open" (click)="openChat()">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="row" style="margin: 0" *ngIf="chat">
+        <div class="col s12">
+            <div class="row">
+                <div id="chatBox" class="col s12" *ngIf="mensajes.length != 0">
+                    <ng-container *ngFor="let msj of mensajes" id="">
+                        <div class="mensaje" [ngClass]="{'from': msj.enviadoPor === 'bot',
+                                                 'to': msj.enviadoPor === 'cliente' }">
+
+                            {{msj.content}}
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s10" id="chatInput">
+                    <input type="text" [(ngModel)]="msjVal" id="inputMsj" (keyup.enter)="sendMsj()" placeholder="Escribe algo...">
+                </div>
+                <button (click)="sendMsj()" class="btn light-blue darken-4 waves-light col s2">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>

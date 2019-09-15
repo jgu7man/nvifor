@@ -1,0 +1,21 @@
+h3 {
+    text-transform: uppercase;
+}
+
+.rowPlan {
+    height: 4em;
+}
+
+.rowPlan:nth-child(3) {
+    height: 9em;
+}
+
+.planDesc:hover {
+    cursor: pointer;
+    transition: all .35s;
+    transform: scale(1.05)
+}
+
+.buyBtn {
+    margin: 1em 0
+}
